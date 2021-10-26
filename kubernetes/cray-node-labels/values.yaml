@@ -18,7 +18,7 @@ refreshSeconds: "3600"
 numReplicas: "1"
 nameOverride: ""
 fullnameOverride: ""
-imagesHost: "dtr.dev.cray.com"
+imagesHost: "artifactory.algol60.net/csm-docker/stable"
 kubectlImageVersion: "1.5.4"
 namespace: "services"
 strategy:
