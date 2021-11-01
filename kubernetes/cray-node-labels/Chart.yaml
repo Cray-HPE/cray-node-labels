@@ -19,6 +19,6 @@ maintainers:
 appVersion: 1.19.9
 annotations:
   artifacthub.io/images: |
-    - name: curl
-      image: artifactory.algol60.net/csm-docker/stable/docker.io/curlimages/curl:7.73.0
+    - name: docker-kubectl
+      image: artifactory.algol60.net/csm-docker/stable/docker-kubectl:1.19.9
   artifacthub.io/license: MIT

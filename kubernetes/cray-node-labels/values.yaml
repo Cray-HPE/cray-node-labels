@@ -16,15 +16,6 @@ image:
   # tag defaults to chart appVersion
   pullPolicy: Always
 
-securityContext:
-  allowPrivilegeEscalation: false
-  capabilities:
-    drop: ["all"]
-  readOnlyRootFilesystem: true
-  runAsGroup: 65534
-  runAsNonRoot: true
-  runAsUser: 65534
-
 #
 # Amount of time in seconds between wake-ups to check for new labels to set
 #
