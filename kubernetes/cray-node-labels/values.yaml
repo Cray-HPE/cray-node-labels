@@ -11,6 +11,11 @@
 nodeLabels:
   - ncn-m001:no_external_access=False
 
+image:
+  repository: artifactory.algol60.net/csm-docker/stable/docker-kubectl
+  # tag defaults to chart appVersion
+  pullPolicy: Always
+
 #
 # Amount of time in seconds between wake-ups to check for new labels to set
 #
@@ -18,8 +23,6 @@ refreshSeconds: "3600"
 numReplicas: "1"
 nameOverride: ""
 fullnameOverride: ""
-imagesHost: "artifactory.algol60.net/csm-docker/stable"
-kubectlImageVersion: "1.5.4"
 namespace: "services"
 strategy:
-    type: Recreate
+  type: Recreate

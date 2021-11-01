@@ -36,7 +36,8 @@ spec:
             topologyKey: kubernetes.io/hostname
       containers:
       - name: node-images 
-        image: {{ include "cray-node-labels.image-prefix" . }}docker.io/istio/kubectl:{{ .Values.kubectlImageVersion }}
+        image: {{ .Values.image.repository }}:{{ default .Chart.AppVersion .Values.image.tag }}
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
         command:
            - /bin/sh
            - -c
