@@ -16,9 +16,9 @@ sources:
 maintainers:
   - name: bo-quan
     url: https://github.com/bo-quan
-appVersion: 1.19.9
+appVersion: 1.19.15
 annotations:
   artifacthub.io/images: |
     - name: docker-kubectl
-      image: artifactory.algol60.net/csm-docker/stable/docker-kubectl:1.19.9
+      image: artifactory.algol60.net/csm-docker/stable/docker-kubectl:1.19.15
   artifacthub.io/license: MIT
