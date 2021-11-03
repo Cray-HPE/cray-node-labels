@@ -14,7 +14,7 @@ nodeLabels:
 image:
   repository: artifactory.algol60.net/csm-docker/stable/docker-kubectl
   # tag defaults to chart appVersion
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
 
 #
 # Amount of time in seconds between wake-ups to check for new labels to set
