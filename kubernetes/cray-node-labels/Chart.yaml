@@ -1,7 +1,24 @@
 #
 # Copyright 2021 Hewlett Packard Enterprise Development LP
 #
-apiVersion: v1
+apiVersion: v2
+version: 0.4.1
 name: cray-node-labels
 description: Create labels for kubernetes nodes
-version: 0.4.0
+keywords:
+  - node-label
+  - node-labels
+  - label
+  - labels
+home: https://github.com/Cray-HPE/cray-node-labels
+sources:
+  - https://github.com/Cray-HPE/cray-node-labels
+maintainers:
+  - name: bo-quan
+    url: https://github.com/bo-quan
+appVersion: 1.19.15
+annotations:
+  artifacthub.io/images: |
+    - name: docker-kubectl
+      image: artifactory.algol60.net/csm-docker/stable/docker-kubectl:1.19.15
+  artifacthub.io/license: MIT
